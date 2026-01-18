@@ -4,7 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teonis Transportation LLC. | Child Daycare Transport</title>
+
+    <title>Teonis Transportation LLC | Daycare Transportation in Boston, MA</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Teonis Transportation LLC provides safe, reliable, and licensed child daycare transportation in Boston, MA. Serving families Monday through Friday.">
+
+    <meta name="keywords"
+        content="daycare transportation Boston, child transportation Boston, kids daycare pickup, school transportation Boston">
+
+    <meta name="author" content="Teonis Transportation LLC">
 
     <style>
         /* RESET */
@@ -28,10 +38,8 @@
             padding: 80px 20px;
         }
 
-        /* BIG LOGO */
         header img {
-            max-width: 360px;
-            /* BIGGER LOGO */
+            max-width: 260px;
             height: auto;
             margin-bottom: 20px;
         }
@@ -87,7 +95,7 @@
             font-size: 1.1em;
         }
 
-        /* CONTACT FORM */
+        /* FORM */
         form {
             display: grid;
             gap: 15px;
@@ -141,26 +149,25 @@
 
     <header>
         <img src="logo.png.jpeg" alt="Teonis Transportation Logo">
-        <h1>Teonis Transportation LLC.</h1>
-        <p>Safe • Licensed • Reliable Child Transportation</p>
+        <h1>Teonis Transportation LLC</h1>
+        <p>Licensed Child Daycare Transportation in Boston, MA</p>
         <p><strong>Hours:</strong> Monday–Friday | 5:30 AM – 7:00 PM</p>
     </header>
 
     <section>
         <h2>Welcome</h2>
         <p>
-            Teonis Transportation provides safe and dependable transportation
-            services for children traveling to and from daycare. We are committed
-            to providing parents with peace of mind through professional, caring,
-            and reliable service.
+            Teonis Transportation LLC provides safe, reliable, and professional
+            daycare transportation services for children in Boston, Massachusetts.
+            We are committed to safety, punctuality, and parent peace of mind.
         </p>
     </section>
 
     <section>
         <h2>About Us</h2>
         <p>
-            Teonis Transportation is a child-focused transportation service
-            dedicated to safety, punctuality, and compliance with all childcare
+            We specialize in transporting children to and from licensed daycare
+            facilities. Our service follows all state and local childcare
             transportation regulations.
         </p>
     </section>
@@ -169,10 +176,9 @@
         <h2>Our Services</h2>
         <ul>
             <li>Daycare pick-up and drop-off</li>
-            <li>Scheduled daily transportation</li>
-            <li>Individual and group transport</li>
-            <li>Coordination with licensed daycare facilities</li>
-            <li>Schools pick-up and drop-off</li>
+            <li>Scheduled weekday transportation</li>
+            <li>Individual and group child transport</li>
+            <li>Coordination with daycare centers</li>
         </ul>
     </section>
 
@@ -180,8 +186,8 @@
         <h2>Safety, Licensing & Compliance</h2>
         <ul>
             <li>State-compliant child transportation</li>
-            <li>Proper child restraints</li>
-            <li>Clean, well-maintained vehicles</li>
+            <li>Proper child restraints and seating</li>
+            <li>Clean and well-maintained vehicles</li>
             <li>Background-checked drivers</li>
             <li>CPR & First Aid trained</li>
             <li>Fully insured</li>
@@ -194,20 +200,40 @@
         <p><strong>Saturday & Sunday:</strong> Closed</p>
     </section>
 
+    <!-- GOOGLE MAP -->
     <section>
-        <h2>Contact Us</h2>
+        <h2>Service Area</h2>
+        <p>We proudly serve families and daycare centers throughout Boston, MA.</p>
+
+        <iframe src="https://www.google.com/maps?q=Boston,MA&output=embed" width="100%" height="350"
+            style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- BOOKING REQUEST -->
+    <section>
+        <h2>Request Transportation</h2>
+
         <form action="https://formsubmit.co/bautistaj1407@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Parent / Guardian Name" required>
+            <input type="hidden" name="subject" value="New Transportation Booking Request">
+
+            <input type="text" name="parent_name" placeholder="Parent / Guardian Name" required>
             <input type="email" name="email" placeholder="Email Address" required>
             <input type="tel" name="phone" placeholder="Phone Number" required>
-            <textarea name="message" rows="4"
-                placeholder="Tell us about your childcare transportation needs"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
 
-        <p style="margin-top:15px;">
-            <strong>Service Area:</strong> Boston, MA.
-        </p>
+            <input type="text" name="child_name" placeholder="Child's Name" required>
+            <input type="number" name="child_age" placeholder="Child's Age" required>
+
+            <input type="text" name="pickup_location" placeholder="Pickup Location" required>
+            <input type="text" name="dropoff_location" placeholder="Drop-off Location" required>
+
+            <input type="time" name="pickup_time" required>
+
+            <textarea name="message" rows="4"
+                placeholder="Days needed, daycare name, and any special instructions"></textarea>
+
+            <button type="submit">Submit Booking Request</button>
+        </form>
     </section>
 
     <footer>
